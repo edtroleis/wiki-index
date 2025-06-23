@@ -1,4 +1,4 @@
-name: Markdown Lint and Link Check
+name: Markdown Lint and Link Check for Wiki
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - dev
       - main
       - master
-  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -14,8 +13,10 @@ jobs:
     name: Lint Markdown Files
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Wiki repository
         uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}.wiki
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -30,11 +31,12 @@ jobs:
 
   check-links:
     name: Check for Broken Links
-    # needs: lint-markdown
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Wiki repository
         uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository }}.wiki
 
       - name: Install lychee
         run: |
