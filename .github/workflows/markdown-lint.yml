@@ -28,6 +28,7 @@ jobs:
 
   check-links:
     name: Check for Broken Links
+    # needs: lint-markdown
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
