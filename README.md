@@ -1,14 +1,18 @@
 # Ansible Usage Guide
 
-Ansible is an open-source automation tool used for configuration management, application deployment, and task automation. This guide provides an overview of how to use Ansible with examples.
+Ansible is an open-source automation tool used for configuration
+ management, application deployment, and task automation.
+This guide provides an overview of how to use Ansible with examples.
 
 ## Prerequisites
 
 1. Install Ansible:
+
    ```bash
    sudo apt update
    sudo apt install ansible -y
    ```
+
 2. Ensure you have SSH access to the target machines.
 
 ## Basic Concepts
@@ -22,6 +26,7 @@ Ansible is an open-source automation tool used for configuration management, app
 ### Step 1: Create an Inventory File
 
 Create a file named `inventory.ini`:
+
 ```ini
 [webservers]
 192.168.1.10 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
@@ -30,6 +35,7 @@ Create a file named `inventory.ini`:
 ### Step 2: Write a Playbook
 
 Create a file named `webserver.yml`:
+
 ```yaml
 ---
 - name: Configure Web Server
@@ -50,6 +56,7 @@ Create a file named `webserver.yml`:
 ### Step 3: Run the Playbook
 
 Execute the playbook using the following command:
+
 ```bash
 ansible-playbook -i inventory.ini webserver.yml
 ```
@@ -57,6 +64,7 @@ ansible-playbook -i inventory.ini webserver.yml
 ## Example: Copying Files to Remote Hosts
 
 Create a playbook named `copy-files.yml`:
+
 ```yaml
 ---
 - name: Copy Files to Remote Hosts
@@ -69,6 +77,7 @@ Create a playbook named `copy-files.yml`:
 ```
 
 Run the playbook:
+
 ```bash
 ansible-playbook -i inventory.ini copy-files.yml
 ```
