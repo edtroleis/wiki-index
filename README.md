@@ -82,7 +82,12 @@ Run the playbook:
 ansible-playbook -i inventory.ini copy-files.yml
 ```
 
-## Additional Resources
+## Useful Links
+
+Here are some helpful resources to learn more about Ansible:
 
 - [Ansible Documentation](https://docs.ansible.com/)
 - [Ansible Galaxy](https://galaxy.ansible.com/)
+- [Ansible GitHub Repository](https://github.com/ansible/ansible)
+- [Ansible Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
+- [Ansible Community](https://www.ansible.com/community)
