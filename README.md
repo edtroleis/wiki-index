@@ -91,3 +91,7 @@ Here are some helpful resources to learn more about Ansible:
 - [Ansible GitHub Repository](https://github.com/ansible/ansible)
 - [Ansible Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html)
 - [Ansible Community](https://www.ansible.com/community)
+- [Ansible Collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html)
+- [Ansible Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
+- [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html)
+- [Broken Link](https://example.com/broken-link) - This link is intentionally broken to demonstrate how to handle such cases.
