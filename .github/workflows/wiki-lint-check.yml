@@ -1,4 +1,4 @@
-name: Markdown Lint and Link Check for Wiki
+name: Wiki Link and link Check
 
 on:
   push:
