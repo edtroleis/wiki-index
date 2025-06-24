@@ -1,4 +1,4 @@
-name: Wiki Link and link Check
+name: wiki-link-and-link-check
 
 on:
   push:

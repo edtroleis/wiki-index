@@ -1,4 +1,4 @@
-name: Markdown Lint and Link Check
+name: readme-lint-and-lint-check
 
 on:
   push:
